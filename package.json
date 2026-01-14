@@ -1,0 +1,38 @@
+{
+  "name": "solo-dev-skills",
+  "version": "1.0.1",
+  "description": "CLI tool to initialize solo-dev-skills in your project",
+  "type": "module",
+  "bin": {
+    "solo-dev-skills": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    ".claude/skills"
+  ],
+  "keywords": [
+    "cli",
+    "skills",
+    "cursor",
+    "claude",
+    "ai"
+  ],
+  "author": "dam2onkid",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dam2onkid/solo-dev-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dam2onkid/solo-dev-skills/issues"
+  },
+  "homepage": "https://github.com/dam2onkid/solo-dev-skills#readme",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

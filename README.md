@@ -1,6 +1,26 @@
 # Solo Dev Skills
 
-A collection of Agent Skills for Claude Code, extending AI agent capabilities in specialized domains.
+A collection of Agent Skills for Cursor and Claude Code, extending AI agent capabilities in specialized domains.
+
+## Installation
+
+```bash
+# Using npx (no installation needed)
+npx solo-dev-skills init
+
+# Or install globally
+npm install -g solo-dev-skills
+solo-dev-skills init
+```
+
+### Options
+
+```bash
+# Initialize for specific environment
+solo-dev-skills init -e cursor    # → .cursor/skills/
+solo-dev-skills init -e claude    # → .claude/skills/
+solo-dev-skills init -e both      # → both (default)
+```
 
 ## Skills
 
@@ -12,6 +32,15 @@ Build universal native apps (Android, iOS, web) with Expo + React Native:
 - SDK packages (camera, notifications, storage, location)
 - EAS Build & deploy to app stores
 - TypeScript standards & performance patterns
+
+### 🧪 expo-tester
+
+Test Expo/React Native apps with Jest, RNTL, and Maestro:
+
+- Jest setup with jest-expo preset
+- React Native Testing Library queries/events
+- Maestro E2E YAML flows
+- CI integration
 
 ### 🎨 mobile-design
 
@@ -30,6 +59,15 @@ Backend-as-a-service with Supabase:
 - Database with Row Level Security (RLS)
 - File storage & realtime subscriptions
 - Edge Functions & CLI
+
+### 📋 test-planner
+
+Plan and strategize testing for web and mobile apps:
+
+- Test strategy documents from requirements
+- Coverage gap analysis
+- Critical path identification
+- QA approach documentation
 
 ### 🛠️ skill-creator
 
@@ -61,10 +99,6 @@ Problem-solving techniques:
 - **scale-game** - Test at extremes (1000x bigger/smaller)
 - **simplification-cascades** - Find insights that eliminate multiple components
 - **when-stuck** - Dispatch to appropriate technique based on symptoms
-
-## Installation
-
-Copy the `.claude/skills/` folder into your project.
 
 ## License
 
