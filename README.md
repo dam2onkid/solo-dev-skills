@@ -13,13 +13,20 @@ npm install -g solo-dev-skills
 solo-dev-skills init
 ```
 
-### Options
+## Commands
 
 ```bash
-# Initialize for specific environment
-solo-dev-skills init -e cursor    # → .cursor/skills/
-solo-dev-skills init -e claude    # → .claude/skills/
-solo-dev-skills init -e both      # → both (default)
+# Initialize all skills
+solo-dev-skills init                      # → both .cursor/skills/ and .claude/skills/
+solo-dev-skills init -e cursor            # → .cursor/skills/ only
+solo-dev-skills init -e claude            # → .claude/skills/ only
+
+# Add specific skills
+solo-dev-skills add expo-dev supabase-dev
+solo-dev-skills add sui-move -e cursor
+
+# List available skills
+solo-dev-skills list
 ```
 
 ## Skills
@@ -59,6 +66,24 @@ Backend-as-a-service with Supabase:
 - Database with Row Level Security (RLS)
 - File storage & realtime subscriptions
 - Edge Functions & CLI
+
+### 🔗 sui-move
+
+Smart contract development on Sui blockchain:
+
+- Move language basics & object model
+- Ownership patterns & capabilities
+- Testing with sui-move-analyzer
+- CLI scripts for build/test/deploy
+
+### 🌐 sui-ts-dev
+
+TypeScript SDK for Sui blockchain:
+
+- Client setup & transaction building
+- dApp Kit for React/Next.js integration
+- zkLogin, Passkey, SuiNS, Walrus, DeepBook
+- Best practices & patterns
 
 ### 📋 test-planner
 
